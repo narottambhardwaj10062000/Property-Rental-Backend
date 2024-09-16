@@ -47,6 +47,10 @@ const propertySchema = new mongoose.Schema({
     public_id: { type: String, required: true },
     link: { type: String, required: true },
   },
+  createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+  }
 });
 const Property = mongoose.model("Property", propertySchema);
 

@@ -12,7 +12,7 @@ const updateProperty = async (req, res) => {
     const {
       name,
       bedRooms,
-      bathrooms,
+      bathRooms,
       length,
       width,
       city,
@@ -27,7 +27,7 @@ const updateProperty = async (req, res) => {
 
     if (name) query.name = name;
     if (bedRooms) query.bedRooms = bedRooms;
-    if (bathrooms) query.bathrooms = bathrooms;
+    if (bathRooms) query.bathRooms = bathRooms;
     if (length) query.length = length;
     if (width) query.width = width;
     if (city) query.city = city;

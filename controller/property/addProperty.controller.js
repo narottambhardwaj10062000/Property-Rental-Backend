@@ -19,6 +19,7 @@ const addProperty = async (req, res) => {
       availableFrom,
       propertyType,
     } = req.body;
+    req.body.createdBy = req.user._id
     const image = req.file.path;
 
     if (
