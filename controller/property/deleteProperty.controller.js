@@ -1,4 +1,5 @@
 import PropertyModel from "../../model/property.model.js";
+import { deleteFromCloudinary } from "../../utils/cloudinary.js";
 
 //------- delete property -------
 const deleteProperty = async (req, res) => {
