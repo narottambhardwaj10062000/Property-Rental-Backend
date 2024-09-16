@@ -10,7 +10,7 @@ const addProperty = async (req, res) => {
     const {
       name,
       bedRooms,
-      bathrooms,
+      bathRooms,
       length,
       width,
       city,
@@ -24,7 +24,7 @@ const addProperty = async (req, res) => {
     if (
       !name ||
       !bedRooms ||
-      !bathrooms ||
+      !bathRooms ||
       !length ||
       !width ||
       !city ||
